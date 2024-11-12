@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--注:三级标签名不要相同-->
+<environment>
+    <server class="com.briup.smart.implement.Serverimpl">
+        <isStop>false</isStop>
+        <port>8888</port>
+    </server>
+
+    <backup class="com.briup.smart.env.implement.Backupimpl">
+    </backup>
+
+    <logger class="com.briup.smart.env.implement.Logimpl">
+    </logger>
+
+    <dbStore class="com.briup.smart.implement.DBStoreBackupimpl">
+        <db-backup-file-path>src/main/resources/db-backup.txt</db-backup-file-path>
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306/envsmart</url>
+        <username>root</username>
+        <password>root</password>
+    </dbStore>
+
+</environment>
